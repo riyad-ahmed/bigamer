@@ -25,6 +25,7 @@ body{
 .banner-section{
   background-image: url(./image/bg.jpg);
   padding: 350px 0 362px;
+  background-repeat: round;
 }
 .right ul li img{
   width: 50px;
@@ -444,6 +445,27 @@ a {
   display: none;
 }
 
+@media screen and (max-width: 1500px){
+  .banner-thumb {
+    bottom: 10rem;
+    margin-left: 0rem;
+    width: 90%;
+ }
+ .banner-thumb-image a img{
+  width: 95%;
+ }
+}
+@media screen and (max-width: 1200px){
+  .banner-thumb {
+    bottom: 6rem;
+    margin-left: 0rem;
+    width: 88%;
+ }
+ .banner-thumb-image a img{
+  width: 90%;
+ }
+}
+
 @media screen and (max-width: 1025px){
   .menu{
     display: none;
@@ -454,9 +476,21 @@ a {
   .containe{
     width: 100%;
   }
+  .banner-thumb-image a img{
+    width: 80%;
+   }
+   .header-bottom{
+    padding-right: 2rem;
+  } 
 }
 @media screen and (max-width:900px) {
   .header-bottom{
-    margin-right: 2rem;
+    padding-right: 4rem;
   } 
+  .banner-thumb-image a img{
+    width: 70%;
+   }
+   .logo img{
+    width: 80%;
+   }
 }
