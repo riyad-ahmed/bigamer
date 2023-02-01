@@ -482,6 +482,9 @@ a {
    .header-bottom{
     padding-right: 2rem;
   } 
+  .banner-thumb {
+    bottom: 2rem;
+ }
 }
 @media screen and (max-width:900px) {
   .header-bottom{
@@ -493,4 +496,7 @@ a {
    .logo img{
     width: 80%;
    }
+   .banner-thumb {
+    bottom: 0rem;
+  }
 }
