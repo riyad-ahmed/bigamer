@@ -444,12 +444,19 @@ a {
 .p-menu1{
   display: none;
 }
+@media screen and (min-width: 1500px){
+  .banner-thumb {
+    bottom: 5rem;
+    align-items: end;
+ }
+}
 
 @media screen and (max-width: 1500px){
   .banner-thumb {
-    bottom: 10rem;
+    bottom: 0rem;
     margin-left: 0rem;
     width: 90%;
+    align-items: end;
  }
  .banner-thumb-image a img{
   width: 95%;
@@ -457,7 +464,7 @@ a {
 }
 @media screen and (max-width: 1200px){
   .banner-thumb {
-    bottom: 6rem;
+    bottom: 4rem;
     margin-left: 0rem;
     width: 88%;
  }
@@ -498,5 +505,10 @@ a {
    }
    .banner-thumb {
     bottom: 0rem;
+    align-items: center;
+  }
+  .main-vs img{
+    width: 60%;
+    margin: auto;
   }
 }
