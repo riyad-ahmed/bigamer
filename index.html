@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="script.js"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="header-section">
+      <div class="container">
+        <div class="holder flex justify-between items-center">
+          <div class="logo">
+            <img src="./image/logo.png" alt="logo.png">
+          </div>
+          <div class="header-menu flex flex-col">
+            <div class="header-top flex justify-between">
+              <div class="left">
+
+              </div>
+              <div class="right">
+                <ul class="flex">
+                  <li><a href="#"><img src="./image/facebook-messenger.svg" alt="facebook-messenger.svg"></a></li>
+                  <li><a href="#"><img src="./image/facebook-messenger.svg" alt="facebook-messenger.svg"></a></li>
+                  <li><a href="#"><img src="./image/facebook-messenger.svg" alt="facebook-messenger.svg"></a></li>
+                  <li><a href="#"><img src="./image/facebook-messenger.svg" alt="facebook-messenger.svg"></a></li>
+                  <li><a href="#"><img src="./image/facebook-messenger.svg" alt="facebook-messenger.svg"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-bottom flex justify-end py-[19px] items-center">
+              <div class="menu">
+                <ul class="flex items-center">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                </ul>
+              </div>
+              <a href="#" class="botton flex items-center border-b-[2px] border-[#ff0052]">
+                <img class="user" src="./image/user.svg" alt="user.svg">
+                <span>
+                  LOG IN
+                </span>
+              </a>
+              <a href="#" class="botton-tow flex items-center border-b-[2px] border-r-[2px] border-[#fff]">
+                <img class="user" src="./image/users-alt-3.svg" alt="users-alt-3.svg">
+                <span>
+                  SIGN UP
+                </span>
+              </a>
+            </div>
+            <!-- Hamburger Dropdown Menu -->
+            <section class="p-menu1">
+              <nav id="navbar" class="navigation" role="navigation">
+                <input id="toggle1" type="checkbox" />
+                <label class="hamburger1" for="toggle1">
+                  <div class="top"></div>
+                  <div class="meat"></div>
+                  <div class="bottom"></div>
+                </label>
+
+                <nav class="menu1">
+                  <a class="link1" href="">Our Models</a>
+                  <a class="link1" href="">Specialties</a>
+                  <a class="link1" href="">About</a>
+                  <a class="link1" href="">Blog</a>
+                </nav>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-section">
+      <div class="container">
+        <div class="banner-content text-center mt-[-50px]">
+          <h4 class="text-[#ff0052] mb-4">TODAY BIG MATCHE</h4>
+          <img class="m-auto mb-4" src="./image/heading.png" alt="heading.png">
+          <p>Time : 08:30Pm - 30 December 2021</p>
+          <a href="#" class="default-button reverse-effect">
+            <span>
+              Watch Now
+              <i class="icofont-play-alt-1"></i>
+            </span>
+          </a>
+        </div>
+
+        <div class="banner-thumb flex justify-between">
+          <div class="banner-thumb-image">
+            <a href="#">
+              <img src="./image/thumb1.png" alt="thumb1.png">
+            </a>
+          </div>
+          <div class="banner-thumb-image">
+            <a href="#">
+              <img src="./image/thumb2.png" alt="thumb2.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="match-section py-[100px]">
+      <div class="container">
+        <div class="section-header text-center mb-[40px]">
+          <p class="uppercase text-[#ff0052] text-[1.125rem] tracking-[3px]">Anywhere, Anytime</p>
+          <h2 class="uppercase text-[2.5rem]">All matches schedule </h2>
+        </div>
+        <div class="info"></div>
+        <div class="match-card">
+          <div class="card grid grid-cols-3 items-center">
+            <div>
+              <h4 class="uppercase text-[#000] font-[700] text-[1rem]"><a href="#">Battlefield-4 tournament</a></h4>
+              <p>
+                <span class="text-[#555]">30 April 2021</span>
+                <span class="text-[#555]">Time: 08:30PM</span>
+              </p>
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <img class="time" src="./image/teamsm-1.png" alt="teamsm-1.png">
+              </div>
+              <div>
+                <img src="./image/vs.png" alt="vs.png">
+              </div>
+              <div>
+                <img class="time" src="./image/teamsm-2.png" alt="teamsm-2.png">
+              </div>
+            </div>
+            <div class="text-end match-social-list">
+              <a href="#" class="default-button reverse-effect">
+                <span class="flex items-center">
+                  More Info
+                  <img class="w-[20px]" src="./image/play-alt-1 (1).svg" alt="play-alt-1 (1).svg">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="upcome-matches-section grid grid-cols-2 gap-10 pt-[2rem]">
+          <div class="upcome-matches">
+            <h3
+              class="upcome-matches-header uppercase text-[#fff] font-[700] text-[1.5rem] text-center py-[20px] px-[10px]">
+              Upcoming
+              Matches</h3>
+            <div class="info"></div>
+            <div class="upcome-matches-card">
+              <div class="row align-items-center justify-content-center">
+                <div class="grid grid-cols-5">
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb1.png" alt="thumb1.png">
+                  </div>
+                  <div class="col-span-3">
+                    <h4 class="text-[1.25rem] font-[700] text-[#000] uppercase text-center hover:text-[red]"><a
+                        href="#">call of duty
+                        TOURNAMENT</a>
+                    </h4>
+                    <p class="flex justify-center">
+                      <span class="text-[#555]">15 May 2022</span>
+                      <span class="text-[#555]">Time: 08:30PM</span>
+                    </p>
+                  </div>
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb2.png" alt="thumb2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Previous Matches">
+            <h3
+              class="Previous-matches-header uppercase text-[#fff] font-[700] text-[1.5rem] text-center py-[20px] px-[10px]">
+              Upcoming
+              Matches</h3>
+            <div class="info"></div>
+            <div class="Previous-matches-card">
+              <div class="row align-items-center justify-content-center">
+                <div class="grid grid-cols-5">
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb1.png" alt="thumb1.png">
+                  </div>
+                  <div class="col-span-3">
+                    <h4 class="text-[1.25rem] font-[700] text-[#000] uppercase text-center hover:text-[red]"><a
+                        href="#">4
+                        - 2</a>
+                    </h4>
+                    <p class="flex justify-center">
+                      <span class="text-[#555]">15 May 2022</span>
+                      <span class="text-[#555]">Time: 08:30PM</span>
+                    </p>
+                  </div>
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb2.png" alt="thumb2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="upcome-matches">
+            <div class="info"></div>
+            <div class="upcome-matches-card">
+              <div class="row align-items-center justify-content-center">
+                <div class="grid grid-cols-5">
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb1.png" alt="thumb1.png">
+                  </div>
+                  <div class="col-span-3">
+                    <h4 class="text-[1.25rem] font-[700] text-[#000] uppercase text-center hover:text-[red]"><a
+                        href="#">call of duty
+                        TOURNAMENT</a>
+                    </h4>
+                    <p class="flex justify-center">
+                      <span class="text-[#555]">15 May 2022</span>
+                      <span class="text-[#555]">Time: 08:30PM</span>
+                    </p>
+                  </div>
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb2.png" alt="thumb2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Previous Matches">
+            <div class="info"></div>
+            <div class="Previous-matches-card">
+              <div class="row align-items-center justify-content-center">
+                <div class="grid grid-cols-5">
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb1.png" alt="thumb1.png">
+                  </div>
+                  <div class="col-span-3">
+                    <h4 class="text-[1.25rem] font-[700] text-[#000] uppercase text-center hover:text-[red]"><a
+                        href="#">4
+                        - 2</a>
+                    </h4>
+                    <p class="flex justify-center">
+                      <span class="text-[#555]">15 May 2022</span>
+                      <span class="text-[#555]">Time: 08:30PM</span>
+                    </p>
+                  </div>
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb2.png" alt="thumb2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="upcome-matches">
+            <div class="info"></div>
+            <div class="upcome-matches-card">
+              <div class="row align-items-center justify-content-center">
+                <div class="grid grid-cols-5">
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb1.png" alt="thumb1.png">
+                  </div>
+                  <div class="col-span-3">
+                    <h4 class="text-[1.25rem] font-[700] text-[#000] uppercase text-center hover:text-[red]"><a
+                        href="#">call of duty
+                        TOURNAMENT</a>
+                    </h4>
+                    <p class="flex justify-center">
+                      <span class="text-[#555]">15 May 2022</span>
+                      <span class="text-[#555]">Time: 08:30PM</span>
+                    </p>
+                  </div>
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb2.png" alt="thumb2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Previous Matches">
+            <div class="info"></div>
+            <div class="Previous-matches-card">
+              <div class="row align-items-center justify-content-center">
+                <div class="grid grid-cols-5">
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb1.png" alt="thumb1.png">
+                  </div>
+                  <div class="col-span-3">
+                    <h4 class="text-[1.25rem] font-[700] text-[#000] uppercase text-center hover:text-[red]"><a
+                        href="#">4
+                        - 2</a>
+                    </h4>
+                    <p class="flex justify-center">
+                      <span class="text-[#555]">15 May 2022</span>
+                      <span class="text-[#555]">Time: 08:30PM</span>
+                    </p>
+                  </div>
+                  <div class="col-span-1">
+                    <img class="time" src="./image/thumb2.png" alt="thumb2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="our-squad">
+      <div class="squad-content text-center mb-[40px]">
+        <p class="text-[#ff0052] text-[1.125rem] tracking-[3px] uppercase">Our Team Players</p>
+        <h2 class="text-[2.5rem] tracking-[3px] uppercase">Meet Our Squad Players </h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="squad-card-item-1 text-center"
+              style="background-image: url('./image/squad-card-item-1-bg.jpg');">
+              <div class="pt-[70px] pb-[120px]">
+                <img class="time mb-[30px] w-[230px]" src="./image/thumb1.png" alt="thumb1.png">
+                <h2 class="text-[1.5rem] font-[700]">Dragon Team</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="squad-card-item-1 text-center"
+              style="background-image: url('./image/squad-card-item-2-bg.jpg');">
+              <div class="pt-[70px] pb-[120px]">
+                <img class="time mb-[30px] w-[230px]" src="./image/thumb1.png" alt="thumb1.png">
+                <h2 class="text-[1.5rem] font-[700]">Dragon Team</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="squad-card-item-1 text-center"
+              style="background-image: url('./image/squad-card-item-3-bg.jpg');">
+              <div class="pt-[70px] pb-[120px]">
+                <img class="time mb-[30px] w-[230px]" src="./image/thumb1.png" alt="thumb1.png">
+                <h2 class="text-[1.5rem] font-[700]">Dragon Team</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="squad-card-item-1 text-center"
+              style="background-image: url('./image/squad-card-item-4-bg.jpg');">
+              <div class="pt-[70px] pb-[120px]">
+                <img class="time mb-[30px] w-[230px]" src="./image/thumb1.png" alt="thumb1.png">
+                <h2 class="text-[1.5rem] font-[700]">Dragon Team</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="squad-card-item-1 text-center"
+              style="background-image: url('./image/squad-card-item-1-bg.jpg');">
+              <div class="pt-[70px] pb-[120px]">
+                <img class="time mb-[30px] w-[230px]" src="./image/thumb1.png" alt="thumb1.png">
+                <h2 class="text-[1.5rem] font-[700]">Dragon Team</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="squad-card-item-1 text-center"
+              style="background-image: url('./image/squad-card-item-2-bg.jpg');">
+              <div class="pt-[70px] pb-[120px]">
+                <img class="time mb-[30px] w-[230px]" src="./image/thumb1.png" alt="thumb1.png">
+                <h2 class="text-[1.5rem] font-[700]">Dragon Team</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- carosal -->
+
+    <!-- <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
+      <div class="carousel-inner relative w-full overflow-hidden">
+        <div class="carousel-item active relative float-left w-full">
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="block w-full" alt="Wild Landscape" />
+        </div>
+        <div class="carousel-item relative float-left w-full">
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="block w-full" alt="Camera" />
+        </div>
+        <div class="carousel-item relative float-left w-full">
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="block w-full" alt="Exotic Fruits" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+        type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 xl:grid-cols-3 py-[120px] gap-x-10">
+        <div class="footer-intro">
+          <img class="mb-[1.5rem]" src="./image/logo.png" alt="logo.png">
+          <p>Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets
+            whereas propriate and brand economca sound technolog</p>
+        </div>
+        <div>
+          <h2 class="text-[1.25rem] font-[700] mb-[25px]">Top jackpot games</h2>
+          <div class="flex mb-[18px]">
+            <div class="w-[90px] overflow-hidden">
+              <img class="rot" src="./image/footer-card1.jpg" alt="footer-card1.jpg">
+            </div>
+            <div class="pl-[20px]">
+              <a class="mb-[5px] uppercase font-[700]" href="#">free Poker Game</a>
+              <p>Poker
+                <b>$230</b>
+              </p>
+              <ul class="flex">
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex mb-[18px]">
+            <div class="w-[90px] overflow-hidden">
+              <img class="rot" src="./image/footer-card1.jpg" alt="footer-card1.jpg">
+            </div>
+            <div class="pl-[20px]">
+              <a class="mb-[5px] uppercase font-[700]" href="#">free Poker Game</a>
+              <p>Poker
+                <b>$230</b>
+              </p>
+              <ul class="flex">
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex mb-[18px]">
+            <div class="w-[90px] overflow-hidden">
+              <img class="rot" src="./image/footer-card1.jpg" alt="footer-card1.jpg">
+            </div>
+            <div class="pl-[20px]">
+              <a class="mb-[5px] uppercase font-[700]" href="#">free Poker Game</a>
+              <p>Poker
+                <b>$230</b>
+              </p>
+              <ul class="flex">
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+                <li><img class="w-[1rem]" src="./image/star.svg" alt="star.svg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-[1.25rem] font-[700] mb-[25px] uppercase">Our Newsletter</h2>
+          <p class="mb-[25px]">Bigamer esports organization supported by <br> community leaders</p>
+          <form>
+            <div class="form-group mb-4">
+              <input type="text" name="name" id="item01" class="form-control" placeholder="Your Name *" value="">
+            </div>
+            <div class="form-group mb-2">
+              <input type="email" name="name" id="item02" class="form-control" placeholder="Your Email *" value="">
+            </div>
+            <a href="#" class="default-button reverse-effect mt-[15px]">
+              <span>
+                Watch Now
+                <i class="icofont-play-alt-1"></i>
+              </span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
