@@ -289,16 +289,6 @@ a {
   z-index: 0;
 }
 
-.default-button:after, .default-button:before {
-  border-radius: 4px;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transition: .3s cubic-bezier(.79,.14,.15,.86);
-  width: 100%;
-}
 .default-button span {
   position: inherit;
   z-index: 2;
@@ -343,10 +333,6 @@ a {
   line-height: 50px;
 }
 
-.default-button:after, .default-button:hover {
-  -webkit-transform: translate(4px,4px);
-  transform: translate(4px,4px);
-}
 
 .default-button:hover:after {
   background-color: #fff;

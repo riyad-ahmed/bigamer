@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="./blog.css">
+  <!-- <link rel="stylesheet" href="script.js"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="blog-banner">
+    <div class="container">
+      <div class="banner content">
+        <h2 class="text-[3rem] uppercase text-[#fff] text-center font-[700]">Blog Style Two</h2>
+      </div>
+    </div>
+  </div>
+  <div class="blog-section py-[120px]">
+    <div class="container">
+      <div class="row section-wrapper">
+        <div class="grid grid-cols-12">
+          <div class="lg:col-span-8 col-span-12 mr-5">
+            <!-- card#1 -->
+            <div class="post-item bg-[#232a5c] mb-[3rem]">
+              <div class="post-inner overflow-hidden">
+                <div class="post-thumb">
+                  <a href="#">
+                    <img src="./blog-image/blog-banner.jpg" alt="blog-banner.jpg">
+                  </a>
+                </div>
+                <div class="post-content p-[30px]">
+                  <a href="/blog-single">
+                    <h2 class="text-[1.875rem] text-[#fff] mb-[15px] font-[700]">It's no secret that the digital
+                      industry is boom
+                    </h2>
+                  </a>
+                  <ul class="lab-ul flex mb-[19px]">
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/calendar.svg" alt="calendar.svg">
+                      <span>
+                        October 9, 2021 10:59 am
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/user.svg" alt="user.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">Robot Smith</a>
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/comments.svg" alt="comments.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">09 Comments</a>
+                      </span>
+                    </li>
+                  </ul>
+                  <p class="text-[#fff] mb-[25px]">
+                    It's no secret that the digital industry is booming. from exciting startups to global brands, to
+                    the new companies are reachin boomingesagencies, responding to the new psblites available.
+                    however, the industry is exciting fast becoming overcr.
+                  </p>
+                  <a href="#" class="default-button reverse-effect">
+                    <span>
+                      Watch Now
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- card#2 -->
+            <div class="post-item bg-[#232a5c] mb-[3rem]">
+              <div class="post-inner overflow-hidden">
+                <div class="post-thumb-boom">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src=" ./blog-image/blog-banner-2.jpg" alt="blog-banner.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./blog-image/blog-banner.jpg" alt="blog-banner.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./blog-image/blog-banner-3.jpg" alt="blog-banner.jpg">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next">
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+                <div class="post-content p-[30px]">
+                  <a href="/blog-single">
+                    <h2 class="text-[1.875rem] text-[#fff] mb-[15px] font-[700]">It's no secret that the digital
+                      industry is boom
+                    </h2>
+                  </a>
+                  <ul class="lab-ul flex mb-[19px]">
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/calendar.svg" alt="calendar.svg">
+                      <span>
+                        October 9, 2021 10:59 am
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/user.svg" alt="user.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">Robot Smith</a>
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/comments.svg" alt="comments.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">09 Comments</a>
+                      </span>
+                    </li>
+                  </ul>
+                  <p class="text-[#fff] mb-[25px]">
+                    It's no secret that the digital industry is booming. from exciting startups to global brands, to
+                    the new companies are reachin boomingesagencies, responding to the new psblites available.
+                    however, the industry is exciting fast becoming overcr.
+                  </p>
+                  <a href="#" class="default-button reverse-effect">
+                    <span>
+                      Watch Now
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- card#3 -->
+            <div class="post-item bg-[#232a5c] mb-[3rem]">
+              <div class="post-inner overflow-hidden">
+                <div class="post-thumb">
+                  <a href="#">
+                    <img src="./blog-image/blog-banner.jpg" alt="blog-banner.jpg">
+                  </a>
+                  <a href="#">
+                    <div class="play-btn w-[30px] h-[30px]">
+                      <img src="./blog-image/play.svg" alt="play.svg">
+                    </div>
+                  </a>
+                </div>
+                <div class="post-content p-[30px]">
+                  <a href="/blog-single">
+                    <h2 class="text-[1.875rem] text-[#fff] mb-[15px] font-[700]">It's no secret that the digital
+                      industry is boom
+                    </h2>
+                  </a>
+                  <ul class="lab-ul flex mb-[19px]">
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/calendar.svg" alt="calendar.svg">
+                      <span>
+                        October 9, 2021 10:59 am
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/user.svg" alt="user.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">Robot Smith</a>
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/comments.svg" alt="comments.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">09 Comments</a>
+                      </span>
+                    </li>
+                  </ul>
+                  <p class="text-[#fff] mb-[25px]">
+                    It's no secret that the digital industry is booming. from exciting startups to global brands, to
+                    the new companies are reachin boomingesagencies, responding to the new psblites available.
+                    however, the industry is exciting fast becoming overcr.
+                  </p>
+                  <a href="#" class="default-button reverse-effect">
+                    <span>
+                      Watch Now
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- card#4 -->
+            <div class="post-item bg-[#232a5c] mb-[3rem]">
+              <div class="post-inner overflow-hidden">
+                <div class="post-thumb">
+                  <a href="#">
+                    <img src="./blog-image/blog-banner-4.jpg" alt="blog-banner.jpg">
+                  </a>
+                </div>
+                <div class="post-content p-[30px]">
+                  <a href="/blog-single">
+                    <h2 class="text-[1.875rem] text-[#fff] mb-[15px] font-[700]">It's no secret that the digital
+                      industry is boom
+                    </h2>
+                  </a>
+                  <ul class="lab-ul flex mb-[19px]">
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/calendar.svg" alt="calendar.svg">
+                      <span>
+                        October 9, 2021 10:59 am
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/user.svg" alt="user.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">Robot Smith</a>
+                      </span>
+                    </li>
+                    <li class="flex text-[#fff] items-center mr-2">
+                      <img class="w-[15px] h-[15px] mr-2" src="./blog-image/comments.svg" alt="comments.svg">
+                      <span class="hover:text-[#ff0052]">
+                        <a href="#">09 Comments</a>
+                      </span>
+                    </li>
+                  </ul>
+                  <p class="text-[#fff] mb-[25px]">
+                    It's no secret that the digital industry is booming. from exciting startups to global brands, to
+                    the new companies are reachin boomingesagencies, responding to the new psblites available.
+                    however, the industry is exciting fast becoming overcr.
+                  </p>
+                  <a href="#" class="default-button reverse-effect">
+                    <span>
+                      Watch Now
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-4">
+            <h2 class="text-[1.5rem] mb-[25px]">SEARCH YOUR KEYWORDS.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./blog.js"></script>
+</body>
+
+</html>
