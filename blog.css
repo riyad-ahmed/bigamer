@@ -39,17 +39,6 @@ body{
     max-width: 540px;
   }
 }
-.blog-section{
-  background-color: #080e37;
-}
-
-.default-button.reverse-effect {
-  color: #fff;
-}
-
-.match-social-list a {
-  transition: .3s cubic-bezier(.175,.885,.32,1.275);
-}
 
 .default-button.reverse-effect:before {
   background-color: #ff0052;
@@ -59,6 +48,11 @@ body{
   background-color: #fff;
   box-shadow: 0.2rem 0.2rem 0.5rem rgb(0 0 0 / 20%);
   z-index: 1;
+}
+
+.default-button:after {
+  background-color: #ff0052;
+  z-index: 0;
 }
 
 .default-button.reverse-effect:hover:before {
@@ -87,17 +81,10 @@ body{
   transform: translate(4px,4px);
 }
 
-.default-button:after {
-  background-color: #ff0052;
-  z-index: 0;
-}
+
 .default-button span {
   position: inherit;
   z-index: 2;
-}
-
-.match-social-list .default-button {
-  line-height: 50px;
 }
 
 .default-button.reverse-effect {
@@ -119,20 +106,8 @@ body{
   transition: .3s cubic-bezier(.79,.14,.15,.86);
 }
 
-
 .default-button.reverse-effect:hover {
   color: #ff0052;
-}
-
-.match-social-list a:hover {
-  -webkit-filter: drop-shadow(0 3px 2px rgba(0,0,0,.301));
-  filter: drop-shadow(0 3px 2px rgba(0,0,0,.301));
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-}
-
-.match-social-list .default-button {
-  line-height: 50px;
 }
 
 .default-button:hover:after {
@@ -143,11 +118,6 @@ body{
 
 .default-button:hover img{
   color: #ff0052;
-}
-
-.post-thumb:hover{
-    transform: scale(1.1);
-    transition: transform 1s;
 }
 
 .blog-section::after{
@@ -165,6 +135,7 @@ body{
   transform: translateY(-5px);
   transition: all .3s linear;
 }
+
 .swiper-button-next{
   background-color: #fff;
   width: 2.5rem !important;
@@ -179,14 +150,43 @@ body{
   content: "";
   background-image: url(/blog-image/rounded-left.svg);
 }
-/* .play-btn{
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-} */
 
 .play-btn{
   position: absolute;
   background-color: #fff;
+}
+.bg{
+  background-color: #232a5c;
+  position: absolute;
+  right: 0;
+  height: 500rem;
+  width: 35%;
+}
+.dotet:before {
+  content: "";
+  position: absolute;
+  background-color: #ff0052;
+  border-radius: 2px;
+  bottom: -20px;
+  height: 4px;
+  width: 40px;
+}
+.dotet:after {
+  border-bottom: 5px dotted #ff0052;
+  bottom: -20px;
+  content: "";
+  left: 43px;
+  position: absolute;
+  width: 30px;
+}
+.search-wrapper input {
+  background-color: hsla(0,0%,100%,.1);
+  border: none;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 0;
+  outline: none;
+  padding: 13px 23px;
+  width: 100%;
 }
