@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="./form.css">
+  <!-- <link rel="stylesheet" href="script.js"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./icofont/icofont/icofont.min.css">
+</head>
+
+<body>
+
+  <div class="blog-banner">
+    <div class="container">
+      <div class="banner content">
+        <h2 class="text-[3rem] uppercase text-[#fff] text-center font-[700]">Blog Style Two</h2>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="login-section padding-top padding-bottom bg-[#080e37] py-10">
+    <div class=" container">
+      <div class="account-wrapper">
+        <h3 class="title mb-[30px] font-[700] text-[1.5rem] text-[#fff]">Login</h3>
+        <form class="account-form">
+          <div class="form-group"><input type="text" name="name" id="item01" placeholder="User Name *" value=""></div>
+          <div class="form-group"><input type="password" name="password" id="item02" placeholder="Password *" value="">
+          </div>
+          <div class="form-group">
+            <div class="flex justify-between flex-wrap sm:pt-2">
+              <div class="checkgroup"><input type="checkbox" name="remember" id="remember"><label
+                  for="remember">Remember Me</label></div><a href="#">Forget Password?</a>
+            </div>
+          </div>
+          <div class="form-group"><button class="d-block default-button"><span>Submit Now</span></button></div>
+        </form>
+        <div class="account-bottom"><span class="block cate pt-10">Don't Have any Account? <a href="/signup"> Sign
+              Up</a></span><span class="or"><span>or</span></span>
+          <h5 class="subtitle">Login With Social Media</h5>
+          <ul class="match-social-list flex flex-wrap align-items-center justify-center mt-4">
+            <li><a href="#"><img src="assets/images/match/social-1.png" alt="vimeo"></a></li>
+            <li><a href="#"><img src="assets/images/match/social-2.png" alt="youtube"></a></li>
+            <li><a href="#"><img src="assets/images/match/social-3.png" alt="twitch"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
