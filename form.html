@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./form.css">
   <!-- <link rel="stylesheet" href="script.js"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./blog.css">
   <link rel="stylesheet" href="./icofont/icofont/icofont.min.css">
 </head>
 
@@ -47,13 +48,37 @@
           </div>
           <div class="form-group">
             <div class="flex justify-between flex-wrap sm:pt-2">
-              <div class="checkgroup"><input type="checkbox" name="remember" id="remember"><label
-                  for="remember">Remember Me</label></div><a href="#">Forget Password?</a>
+              <!-- <div class="checkgroup">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+              </div> -->
+              <div class="relative inline-block flex items-center">
+                <input type="checkbox" class="hidden" id="checkbox">
+                <label for="checkbox" class="bg-white w-4 h-4 flex items-center justify-center">
+                  <svg class="hidden w-3 h-3 text-green-600 pointer-events-none" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                  </svg>
+                </label>
+                <label for="checkbox" class="text-gray-700 font-medium pl-2 text-white font-medium">Remember
+                  Me</label>
+              </div>
+              <a href="#">Forget Password?</a>
             </div>
           </div>
-          <div class="form-group"><button class="d-block default-button"><span>Submit Now</span></button></div>
+          <!-- <div class="form-group">
+            <button class="d-block default-button">
+              <span>Submit Now</span>
+            </button>
+          </div> -->
+          <a href="#" class="default-button reverse-effect w-full text-[#fff] before:bg-white">
+            <span>
+              Submit Now
+            </span>
+          </a>
         </form>
-        <div class="account-bottom"><span class="block cate pt-10">Don't Have any Account? <a href="/signup"> Sign
+        <div class="account-bottom">
+          <span class="block cate pt-10">Don't Have any Account? <a href="/signup"> Sign
               Up</a></span><span class="or"><span>or</span></span>
           <h5 class="subtitle">Login With Social Media</h5>
           <ul class="match-social-list flex flex-wrap align-items-center justify-center mt-4">
@@ -65,6 +90,8 @@
       </div>
     </div>
   </div>
+
+  <script src="./form.js"></script>
 </body>
 
 </html>

@@ -40,9 +40,9 @@ body{
   }
 }
 
-.default-button.reverse-effect:before {
+/* .default-button.reverse-effect:before {
   background-color: #ff0052;
-}
+} */
 
 .default-button:before {
   background-color: #fff;
@@ -50,16 +50,12 @@ body{
   z-index: 1;
 }
 
-.default-button:after {
-  background-color: #ff0052;
-  z-index: 0;
-}
 
 .default-button.reverse-effect:hover:before {
-  background-color: #fff;
+  background-color: #ff0052;
 }
 .default-button.reverse-effect:hover:after {
-  background-color: #ff0052;
+  background-color: #fff;
 }
 
 .default-button:after, .default-button:before {
@@ -73,7 +69,7 @@ body{
   width: 100%;
 }
 .default-button.reverse-effect:after {
-  background-color: #fff;
+  background-color: #ff0052;
 }
 
 .default-button:after, .default-button:hover {
@@ -88,7 +84,7 @@ body{
 }
 
 .default-button.reverse-effect {
-  color: #fff;
+  color: #ff0052;
 }
 
 .default-button {
@@ -107,11 +103,11 @@ body{
 }
 
 .default-button.reverse-effect:hover {
-  color: #ff0052;
+  color: #fff;
 }
 
 .default-button:hover:after {
-  background-color: #fff;
+
   -webkit-transform: translate(-4px,-4px);
   transform: translate(-4px,-4px);
 }
