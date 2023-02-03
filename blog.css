@@ -203,3 +203,8 @@ body{
   top: 0;
   width: 50px;
 }
+.widget-wrapper:hover .post-thumb img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all .3s linear;
+}
