@@ -141,31 +141,21 @@ body{
   background-image: url(/blog-image/rounded-left.svg);
 }
 
-.play-btn{
-  position: absolute;
-  background-color: #fff;
-}
-.bg{
-  background-color: #232a5c;
-  position: absolute;
-  right: 0;
-  height: 500rem;
-  width: 36%;
-}
-.dotet:before {
+.dotet::before {
   content: "";
   position: absolute;
   background-color: #ff0052;
   border-radius: 2px;
-  margin-top: 40px;
+  left: 0;
+  bottom: 0;
   height: 4px;
   width: 40px;
 }
-.dotet:after {
+.dotet::after{
   border-bottom: 5px dotted #ff0052;
-  margin-top: 40px;
   content: "";
-  left: 43px;
+  left: 45px;
+  bottom: 0;
   position: absolute;
   width: 30px;
 }
@@ -198,3 +188,106 @@ body{
   transform: scale(1.05);
   transition: all .3s linear;
 }
+/* .month .icofont-ui-calendar:before {
+  content: "\ec45";
+} */
+/* .play-btn:before {
+  content: "\ecaa";
+} */
+
+.category-content a:hover .month{
+  transform: translateX(10px);
+  transition: all .3s linear;
+}
+
+.widget-tags ul.tags-content li a {
+  border: 1px solid hsla(0,0%,100%,.1);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px;
+  padding: 7px 13px;
+  transition: all .3s linear;
+}
+.widget-tags ul.widget-wrapper li a {
+  border: 1px solid hsla(0,0%,100%,.1);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px;
+  padding: 7px 13px;
+  transition: all .3s linear;
+}
+.play-2{
+    border-radius: 50%;
+    z-index: -999;
+}
+
+.play-2:before {
+  content: "";
+  position: absolute;
+  -webkit-animation: pluse_animate 3s linear infinite;
+  animation: pluse_animate 3s linear infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  height: 70px;
+  width: 70px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -99;
+}
+/* .play-2::after{
+  content: "";
+  position: absolute;
+  -webkit-animation: pluse_animate2 1s linear infinite;
+  animation: pluse_animate2 1s linear infinite;
+  animation-delay: 1s;
+  height: 70px;
+  width: 70px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -100;
+} */
+
+
+
+@keyframes pluse_animate {
+  0% {
+      transform: scale(.5);
+      background-color: #fff;
+      border-radius: 100%;
+  }
+
+  50% {
+      opacity: .5;
+  }
+
+  100% {
+      transform: scale(2.0);
+      opacity: 0;
+      background-color: #fff;
+  }
+}
+
+/* @keyframes pluse_animate{
+  0%{
+    transform: scale(.01);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: .1;
+  }
+}
+
+
+@keyframes pluse_animate2{
+  0%{
+    transform: scale(.01);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: .1;
+  }
+} */
