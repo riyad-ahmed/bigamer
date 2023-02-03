@@ -236,6 +236,18 @@ body{
   border-radius: 50%;
   z-index: -99;
 }
+/* .play-2::after{
+  content: "";
+  position: absolute;
+  -webkit-animation: pluse_animate2 1s linear infinite;
+  animation: pluse_animate2 1s linear infinite;
+  animation-delay: 1s;
+  height: 70px;
+  width: 70px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -100;
+} */
 
 
 
@@ -256,3 +268,26 @@ body{
       background-color: #fff;
   }
 }
+
+/* @keyframes pluse_animate{
+  0%{
+    transform: scale(.01);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: .1;
+  }
+}
+
+
+@keyframes pluse_animate2{
+  0%{
+    transform: scale(.01);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: .1;
+  }
+} */
