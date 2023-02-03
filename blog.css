@@ -218,3 +218,41 @@ body{
   padding: 7px 13px;
   transition: all .3s linear;
 }
+.play-2{
+    border-radius: 50%;
+    z-index: -999;
+}
+
+.play-2:before {
+  content: "";
+  position: absolute;
+  -webkit-animation: pluse_animate 3s linear infinite;
+  animation: pluse_animate 3s linear infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  height: 70px;
+  width: 70px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -99;
+}
+
+
+
+@keyframes pluse_animate {
+  0% {
+      transform: scale(.5);
+      background-color: #fff;
+      border-radius: 100%;
+  }
+
+  50% {
+      opacity: .5;
+  }
+
+  100% {
+      transform: scale(2.0);
+      opacity: 0;
+      background-color: #fff;
+  }
+}
