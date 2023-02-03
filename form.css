@@ -37,10 +37,6 @@ body{
   align-items: center;
   flex-wrap: nowrap;
 }
-.account-form .form-group a {
-  color: #fff;
-  text-decoration: underline;
-}
 .account-form .form-group .checkgroup input[type=checkbox] {
   height: 18px;
   margin-right: 15px;
