@@ -120,17 +120,7 @@ body{
   color: #ff0052;
 }
 
-.blog-section::after{
-  background-color: #232a5c;
-  content: "";
-  height: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 35%;
-  width: 33%;
-  z-index: -1;
-}
+
 .post-content:hover{
   transform: translateY(-5px);
   transition: all .3s linear;
