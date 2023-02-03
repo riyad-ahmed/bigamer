@@ -145,30 +145,6 @@ body{
   position: absolute;
   background-color: #fff;
 }
-.bg{
-  background-color: #232a5c;
-  position: absolute;
-  right: 0;
-  height: 500rem;
-  width: 36%;
-}
-
-/* .left-dotet{
-  background-color: #ff0052;
-  border-radius: 2px;
-  margin-top: 45px;
-  height: 4px;
-  width: 40px;
-}
-
-.right-dotet{
-  border-bottom: 5px dotted #ff0052;
-  margin-top: 45px;
-  left: 70px;
-  width: 30px;
-} */
-
-
 .dotet::before {
   content: "";
   position: absolute;

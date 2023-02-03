@@ -146,11 +146,11 @@
         <!-- card#3 -->
         <div class="post-item bg-[#232a5c] mb-[3rem]">
           <div class="post-inner overflow-hidden">
-            <div class="post-thumb hover:scale-[1.1] duration-[1s]">
+            <div class="post-thumb hover:scale-[1.1] duration-[1s] relative">
               <a href="#">
                 <img class="w-[100%]" src="./blog-image/blog-banner.jpg" alt="blog-banner.jpg">
               </a>
-              <a href="#">
+              <a href="#" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div class="play-btn w-[30px] h-[30px]">
                   <img src="./blog-image/play.svg" alt="play.svg">
                 </div>
@@ -257,17 +257,14 @@
 
         <div class="widget-post">
           <div class="widget-header">
-            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative">RECENT POST</h2>
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative pb-2">RECENT POST</h2>
           </div>
           <div class="widget-wrapper mb-[65px]">
             <!-- widget-card 1-->
-            <div class="flex gap-4 py-5 border-b-[1px] border-[#39406d]">
+            <div class="flex gap-6 py-5 border-b-[1px] border-[#39406d]">
               <figure>
-                <img class="w-[100px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
+                <img class="w-[130px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
               </figure>
-              <!-- <div class="w-[150px] h-[5rem]">
-                <img class="w-[100px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
-              </div> -->
               <div class="">
                 <a class="text-[18px] text-[#fff] uppercase font-[700]" href="#">
                   <h2>Poor People's
@@ -279,11 +276,11 @@
               </div>
             </div>
             <!-- widget-card 2-->
-            <div class="flex py-5 border-b-[1px] border-[#39406d]">
-              <div class="w-[150px] h-[5rem]">
-                <img class="w-full h-full" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
-              </div>
-              <div>
+            <div class="flex gap-6 py-5 border-b-[1px] border-[#39406d]">
+              <figure>
+                <img class="w-[130px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
+              </figure>
+              <div class="">
                 <a class="text-[18px] text-[#fff] uppercase font-[700]" href="#">
                   <h2>Poor People's
                     Campaign Our
@@ -294,11 +291,11 @@
               </div>
             </div>
             <!-- widget-card 3-->
-            <div class="flex py-5 border-b-[1px] border-[#39406d]">
-              <div class="w-[150px] h-[5rem]">
-                <img class="w-full h-full" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
-              </div>
-              <div>
+            <div class="flex gap-6 py-5 border-b-[1px] border-[#39406d]">
+              <figure>
+                <img class="w-[130px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
+              </figure>
+              <div class="">
                 <a class="text-[18px] text-[#fff] uppercase font-[700]" href="#">
                   <h2>Poor People's
                     Campaign Our
@@ -309,11 +306,25 @@
               </div>
             </div>
             <!-- widget-card 4-->
+            <div class="flex gap-6 py-5 border-b-[1px] border-[#39406d]">
+              <figure>
+                <img class="w-[130px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
+              </figure>
+              <div class="">
+                <a class="text-[18px] text-[#fff] uppercase font-[700]" href="#">
+                  <h2>Poor People's
+                    Campaign Our
+                    Resources</h2>
+                </a>
+                <p class="text-[#fff]">15 May 2022
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="widget-category">
           <div class="category-header">
-            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">Post Categories</h2>
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative pb-2">Post Categories</h2>
           </div>
           <ul class="category-content mb-[65px]">
             <li class="py-[20px] border-b-[1px] border-[#39406d]">
@@ -387,7 +398,7 @@
 
         <div class="widget-instagram mb-[65px]">
           <div class="instagram-header mb-[40px]">
-            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">INSTAGRAM</h2>
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative pb-2">INSTAGRAM</h2>
           </div>
           <div class="instagram-contect">
             <div class="grid grid-cols-3 gap-2">
@@ -416,7 +427,7 @@
         <div class="widget-archive mb-[65px]">
           <div class="archive-content">
             <div class="archiver-header mb-[40px]">
-              <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">OUR ARCHIVE</h2>
+              <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative pb-2">OUR ARCHIVE</h2>
             </div>
             <ul class="category-content mb-[65px]">
               <li class="py-[20px] border-b-[1px] border-[#39406d]">
@@ -491,7 +502,7 @@
 
         <div class="widget-tags">
           <div class="tags-header">
-            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">OUR POPULAR TAGS</h2>
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative pb-2">OUR POPULAR TAGS</h2>
           </div>
           <ul class="lab-ul widget-wrapper flex flex-wrap mb-4 text-[#fff]">
             <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">envato</a></li>
@@ -507,8 +518,6 @@
         </div>
       </div>
     </div>
-  </div>
-
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
