@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./blog.css">
   <!-- <link rel="stylesheet" href="script.js"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./icofont/icofont/icofont.min.css">
 </head>
 
 <body>
@@ -243,9 +244,9 @@
         </div>
       </div>
       <div
-        class="lg:col-span-4 col-span-12 relative pr-5 pl-5 2xl:pr-[20%] xl:pr-[10%] lg:pr[%] bg-[#232a5c] py-[120px]">
+        class="lg:col-span-4 col-span-12 relative pl-5 pr-5 sm:pr-[5rem] sm:pl-[5rem] md:pl-[13rem] 2xl:pr-[20%] xl:pr-[10%] lg:pr[5%] md:pr-[25%] lg:pl-5 bg-[#232a5c] py-[120px]">
         <div class="widget-search mb-[65px]">
-          <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">SEARCH YOUR KEYWORDS</h2>
+          <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative pb-2">SEARCH YOUR KEYWORDS</h2>
           <form action="/" class="search-wrapper flex bg-[#39406d]">
             <input type="text" name="s" id="item01" placeholder="Search Here..." value="">
             <button type="submit">
@@ -253,17 +254,21 @@
             </button>
           </form>
         </div>
+
         <div class="widget-post">
           <div class="widget-header">
-            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">RECENT POST</h2>
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff] relative">RECENT POST</h2>
           </div>
-          <div class="widget-wrapper">
+          <div class="widget-wrapper mb-[65px]">
             <!-- widget-card 1-->
-            <div class="flex py-5 border-b-[1px] border-[#39406d]">
-              <div class="w-[150px] h-[5rem]">
-                <img class="w-full h-full" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
-              </div>
-              <div>
+            <div class="flex gap-4 py-5 border-b-[1px] border-[#39406d]">
+              <figure>
+                <img class="w-[100px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
+              </figure>
+              <!-- <div class="w-[150px] h-[5rem]">
+                <img class="w-[100px] h-[80px]" src="./blog-image/post-thumb-image.jpg" alt="post-thumb-image.jpg">
+              </div> -->
+              <div class="">
                 <a class="text-[18px] text-[#fff] uppercase font-[700]" href="#">
                   <h2>Poor People's
                     Campaign Our
@@ -304,11 +309,205 @@
               </div>
             </div>
             <!-- widget-card 4-->
-
           </div>
+        </div>
+        <div class="widget-category">
+          <div class="category-header">
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">Post Categories</h2>
+          </div>
+          <ul class="category-content mb-[65px]">
+            <li class="py-[20px] border-b-[1px] border-[#39406d]">
+              <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.1s]">
+                <span class="month">
+                  <i class="icofont-ui-calendar"></i>
+                  January
+                </span>
+                <span>
+                  2022
+                </span>
+              </a>
+            </li>
+            <li class="py-[20px] border-b-[1px] border-[#39406d]">
+              <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                <span class="month">
+                  <i class="icofont-ui-calendar"></i>
+                  February
+                </span>
+                <span>
+                  2022
+                </span>
+              </a>
+            </li>
+            <li class="py-[20px] border-b-[1px] border-[#39406d]">
+              <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                <span class="month">
+                  <i class="icofont-ui-calendar"></i>
+                  March
+                </span>
+                <span>
+                  2022
+                </span>
+              </a>
+            </li>
+            <li class="py-[20px] border-b-[1px] border-[#39406d]">
+              <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                <span class="month">
+                  <i class="icofont-ui-calendar"></i>
+                  August
+                </span>
+                <span>
+                  2022
+                </span>
+              </a>
+            </li>
+            <li class="py-[20px] border-b-[1px] border-[#39406d]">
+              <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                <span class="month">
+                  <i class="icofont-ui-calendar"></i>
+                  September
+                </span>
+                <span>
+                  2022
+                </span>
+              </a>
+            </li>
+            <li class="py-[20px]">
+              <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                <span class="month">
+                  <i class="icofont-ui-calendar"></i>
+                  December
+                </span>
+                <span>
+                  2022
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget-instagram mb-[65px]">
+          <div class="instagram-header mb-[40px]">
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">INSTAGRAM</h2>
+          </div>
+          <div class="instagram-contect">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/01.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/02.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/03.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/04.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/05.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/06.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/07.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/08.jpg" alt="blog-banner-2.jpg"></a></div>
+              <div class="overflow-hidden"><a href="#"><img class="w-full hover:scale-[1.05] ease-in duration-[.3s]"
+                    src="./blog-image/09.jpg" alt="blog-banner-2.jpg"></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-archive mb-[65px]">
+          <div class="archive-content">
+            <div class="archiver-header mb-[40px]">
+              <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">OUR ARCHIVE</h2>
+            </div>
+            <ul class="category-content mb-[65px]">
+              <li class="py-[20px] border-b-[1px] border-[#39406d]">
+                <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.1s]">
+                  <span class="month">
+                    <i class="icofont-ui-calendar"></i>
+                    January
+                  </span>
+                  <span>
+                    2022
+                  </span>
+                </a>
+              </li>
+              <li class="py-[20px] border-b-[1px] border-[#39406d]">
+                <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                  <span class="month">
+                    <i class="icofont-ui-calendar"></i>
+                    February
+                  </span>
+                  <span>
+                    2022
+                  </span>
+                </a>
+              </li>
+              <li class="py-[20px] border-b-[1px] border-[#39406d]">
+                <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                  <span class="month">
+                    <i class="icofont-ui-calendar"></i>
+                    March
+                  </span>
+                  <span>
+                    2022
+                  </span>
+                </a>
+              </li>
+              <li class="py-[20px] border-b-[1px] border-[#39406d]">
+                <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                  <span class="month">
+                    <i class="icofont-ui-calendar"></i>
+                    August
+                  </span>
+                  <span>
+                    2022
+                  </span>
+                </a>
+              </li>
+              <li class="py-[20px] border-b-[1px] border-[#39406d]">
+                <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                  <span class="month">
+                    <i class="icofont-ui-calendar"></i>
+                    September
+                  </span>
+                  <span>
+                    2022
+                  </span>
+                </a>
+              </li>
+              <li class="py-[20px]">
+                <a href="#" class="flex justify-between text-[#fff] font-[500] hover:text-[#ff0052] duration-[.2s]">
+                  <span class="month">
+                    <i class="icofont-ui-calendar"></i>
+                    December
+                  </span>
+                  <span>
+                    2022
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="widget-tags">
+          <div class="tags-header">
+            <h2 class="dotet text-[1.5rem] mb-[25px] font-[700] text-[#fff]">OUR POPULAR TAGS</h2>
+          </div>
+          <ul class="lab-ul widget-wrapper flex flex-wrap mb-4 text-[#fff]">
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">envato</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">themeforest</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">codecanyon</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">videohive</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">audiojungle</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">3docean</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">envato</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">themeforest</a></li>
+            <li><a class="inline-block hover:bg-[#ff0052] hover:text-[#fff]" href="#">codecanyon</a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
   </div>
 
