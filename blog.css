@@ -141,10 +141,6 @@ body{
   background-image: url(/blog-image/rounded-left.svg);
 }
 
-.play-btn{
-  position: absolute;
-  background-color: #fff;
-}
 .dotet::before {
   content: "";
   position: absolute;
@@ -192,9 +188,13 @@ body{
   transform: scale(1.05);
   transition: all .3s linear;
 }
-.month .icofont-ui-calendar:before {
+/* .month .icofont-ui-calendar:before {
   content: "\ec45";
-}
+} */
+/* .play-btn:before {
+  content: "\ecaa";
+} */
+
 .category-content a:hover .month{
   transform: translateX(10px);
   transition: all .3s linear;
