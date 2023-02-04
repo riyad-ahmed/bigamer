@@ -382,6 +382,10 @@ ul li {
     transform: translateZ(0) !important;
   }
 
+  .menu li a:hover {
+    background: rgba(255, 0, 82, 0.6);
+  }
+
   .menu li .submenu li {
     width: 100%;
   }
