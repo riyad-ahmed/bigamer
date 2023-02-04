@@ -37,6 +37,10 @@ body a > h6 {
 .header-menu-part {
   position: relative;
 }
+
+.header-menu-part {
+  width: 100%;
+}
 .header-top {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
 }
@@ -62,19 +66,6 @@ body a > h6 {
   margin-right: 5px;
 }
 
-@media (min-width: 576px) {
-  .header-top-area .left li:first-child:after {
-    background-color: hsla(0, 0%, 100%, 0.1);
-    content: "";
-    height: 120%;
-    position: absolute;
-    right: 0;
-    top: -7px;
-    -webkit-transform: rotate(25deg);
-    transform: rotate(25deg);
-    width: 1px;
-  }
-}
 .header-top-area .left li:first-child {
   margin-left: 30px;
   position: relative;
@@ -132,6 +123,7 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-wrapper .menu-area {
@@ -143,6 +135,9 @@ ul li {
 .menu {
   display: flex;
   flex-wrap: wrap;
+}
+.dropdown-menu.show {
+  display: block;
 }
 .menu-item-has-children > a {
   position: relative;
@@ -235,6 +230,25 @@ ul li {
 .header-bar span:first-child {
   top: 0;
 }
+.header-bar.active span:first-child {
+  -webkit-transform: rotate(45deg) translate(3px, 9px);
+  transform: rotate(45deg) translate(3px, 9px);
+}
+.header-bar span:nth-child(2) {
+  top: 52%;
+  -webkit-transform: translateY(-65%);
+  transform: translateY(-65%);
+}
+.header-bar.active span:nth-child(2) {
+  opacity: 0;
+}
+.header-bar.active span:last-child {
+  -webkit-transform: rotate(-45deg) translate(3px, -9px);
+  transform: rotate(-45deg) translate(3px, -9px);
+}
+.header-bar span:last-child {
+  bottom: 0;
+}
 .header-bar span {
   background-color: #fff;
   height: 3px;
@@ -301,9 +315,90 @@ ul li {
   transition: all 0.3s linear;
   width: 100%;
 }
+
+@media (min-width: 576px) {
+  .header-top-area .left li:first-child:after {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    content: "";
+    height: 120%;
+    position: absolute;
+    right: 0;
+    top: -7px;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    width: 1px;
+  }
+  .header-wrapper {
+    position: relative;
+  }
+}
+
 @media (max-width: 575px) {
+  .header-wrapper {
+    position: relative;
+  }
   .header-wrapper .menu-area .ellepsis-bar {
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(35, 42, 92, 0.8);
+    left: 0;
+    max-height: 400px;
+    overflow: auto;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  .menu li {
+    padding: 0;
+    width: 100%;
+  }
+
+  .menu li a {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 25px;
+    text-transform: capitalize;
+  }
+
+  .menu li .submenu {
+    background-color: transparent;
+    padding-left: 20px;
+    position: static !important;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+  }
+
+  .menu li a:hover {
+    background: rgba(255, 0, 82, 0.6);
+  }
+
+  .menu li .submenu li {
+    width: 100%;
+  }
+  .menu.active {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  .header-wrapper {
+    width: 100%;
+  }
+  .header-top {
+    background-color: rgba(35, 42, 92, 0.95);
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -887,9 +982,9 @@ a {
 } */
 
 @media screen and (max-width: 1025px) {
-  .menu {
+  /* .menu {
     display: none;
-  }
+  } */
   .p-menu1 {
     display: inline;
   }
@@ -899,17 +994,17 @@ a {
   .banner-thumb-image a img {
     width: 80%;
   }
-  .header-bottom {
+  /* .header-bottom {
     padding-right: 2rem;
   }
   .banner-thumb {
     bottom: 2rem;
-  }
+  } */
 }
 @media screen and (max-width: 900px) {
-  .header-bottom {
+  /* .header-bottom {
     padding-right: 4rem;
-  }
+  } */
   .banner-thumb-image a img {
     width: 70%;
   }

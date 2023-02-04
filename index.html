@@ -120,15 +120,15 @@
               <div class="header-wrapper lg:justify-end">
                 <div class="mobile-logo lg:hidden">
                   <a href="/">
-                    <img src="assets/images/logo/logo.png" alt="logo">
+                    <img class="max-w-[80px]" src="./image/logo.png" alt="logo">
                   </a>
                 </div>
                 <div class="menu-area">
                   <ul class="menu">
                     <li class="menu-item-has-children"><a href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">Home</a>
+                        aria-haspopup="true" aria-expanded="true" data-bs-offset="0,0">Home</a>
                       <ul
-                        class="submenu  absolute left-0 z-50 float-left hidden list-reset	 py-2 mt-1 text-base bg-white border border-gray-300 rounded">
+                        class="submenu dropdown-menu absolute left-0 z-50  hidden list-reset	 py-2 mt-1 text-base bg-white  rounded show">
                         <li><a aria-current="page" class="active" href="/">Home One</a></li>
                         <li><a class="" href="/index-2">Home Two</a></li>
                       </ul>
@@ -176,7 +176,9 @@
                     <i class="icofont-users"></i>
                     <span>SIGN UP</span>
                   </a>
-                  <div class="header-bar lg:hidden"><span></span><span></span><span></span></div>
+                  <div class="header-bar lg:hidden" onclick="toggleActiveClass()">
+                    <span></span><span></span><span></span>
+                  </div>
                   <div class="ellepsis-bar lg:hidden"><i class="icofont-info-square"></i></div>
                 </div>
               </div>
