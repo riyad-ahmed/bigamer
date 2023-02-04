@@ -19,3 +19,13 @@ var swiper = new Swiper(".cardSlider", {
     clickable: true,
   },
 });
+
+// active class toggle function
+
+function toggleActiveClass() {
+  var activeClass = document.querySelector(".header-bar");
+  var menu = document.querySelector(".menu");
+
+  activeClass.classList.toggle("active");
+  menu.classList.toggle("active");
+}
