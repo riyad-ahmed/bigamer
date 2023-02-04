@@ -14,13 +14,82 @@ body {
   width: 100%;
 }
 
-.container {
-  margin: 0 auto;
-  /* max-width: 1170px; */
-  max-width: 1000px;
-  padding-inline: 20px;
+.header-section2 {
+  content: "";
+  position: absolute;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(35, 42, 92, 0.3);
+  z-index: 999;
   width: 100%;
 }
+
+.header-menu-part {
+  position: relative;
+}
+.header-top {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+.header-top-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-top * {
+  color: #fff;
+}
+.header-top-area .social-icons li {
+  position: relative;
+}
+
+.header-top-area .social-icons li a img {
+  width: 16px;
+  height: 16px;
+  fill: red;
+}
+ul li {
+  margin-left: 0;
+}
+
+.header-top-area .social-icons li:after {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  height: 120%;
+  right: 0;
+  top: -5px;
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  width: 1px;
+}
+
+.header-top-area .social-icons li,
+.page-header-section.style-1,
+.widget.shop-widget {
+  padding: 0;
+}
+@media screen and (min-width: 992px) {
+  .header-menu-part {
+    width: 75%;
+  }
+
+  .header-menu-part:after {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    content: "";
+    height: 120%;
+    left: -15px;
+    position: absolute;
+    top: -20px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    width: 1px;
+  }
+}
+
+/* .container {
+  margin: 0 auto;
+  padding-inline: 20px;
+  width: 100%;
+} */
 
 .banner-section {
   background-image: url(./image/bg.jpg);
@@ -30,6 +99,24 @@ body {
   background-size: cover;
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .banner-section {
+    padding: 50px 0 200px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .banner-section {
+    padding: 250px 0 250px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .banner-section {
+    padding: 350px 0 350px;
+  }
+}
+
 .right ul li img {
   width: 50px;
   height: 50px;
@@ -195,11 +282,8 @@ a {
 }
 
 .banner-thumb {
-  position: absolute;
   display: flex;
-  width: 64%;
-  bottom: 11rem;
-  margin-left: 10rem;
+  margin: auto;
 }
 
 .match-section {
@@ -436,7 +520,7 @@ a {
     align-items: end;
   }
 }
-
+/* 
 @media screen and (max-width: 1500px) {
   .banner-thumb {
     bottom: 0rem;
@@ -447,8 +531,8 @@ a {
   .banner-thumb-image a img {
     width: 95%;
   }
-}
-@media screen and (max-width: 1200px) {
+} */
+/* @media screen and (max-width: 1200px) {
   .banner-thumb {
     bottom: 4rem;
     margin-left: 0rem;
@@ -457,7 +541,7 @@ a {
   .banner-thumb-image a img {
     width: 90%;
   }
-}
+} */
 
 @media screen and (max-width: 1025px) {
   .menu {
