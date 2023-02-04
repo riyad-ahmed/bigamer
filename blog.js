@@ -1,6 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
   cssMode: true,
   loop: true,
+  clickable: true,
   
   navigation: {
     nextEl: ".swiper-button-next",
